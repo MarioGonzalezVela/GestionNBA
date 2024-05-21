@@ -31,7 +31,7 @@ public class Main extends AbstractConexion {
 		
 		JugadorImp j = new JugadorImp();
 		System.out.println(j.findAll());
-//		System.out.println(j.findById("Rudy Gay"));
+//		System.out.println(j.findById("Rudy Gay")); HOLA
 
 	}
 
