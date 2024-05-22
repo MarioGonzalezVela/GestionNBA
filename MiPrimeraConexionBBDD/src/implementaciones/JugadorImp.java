@@ -13,6 +13,11 @@ import interfaces.JugadorDAO;
 import modelos.Equipo;
 import modelos.Jugador;
 
+/**
+ * @author Mario
+ * @version 1
+ */
+
 public class JugadorImp extends AbstractConexion implements JugadorDAO {
 
 	Jugador jugador = new Jugador();
