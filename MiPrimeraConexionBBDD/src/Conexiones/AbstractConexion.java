@@ -1,6 +1,12 @@
 package Conexiones;
 
 import java.sql.Connection;
+
+/**
+ * @author Mario
+ * @version 1
+ */
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
