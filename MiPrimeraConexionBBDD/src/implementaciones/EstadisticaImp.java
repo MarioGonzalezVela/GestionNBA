@@ -10,19 +10,25 @@ import modelos.Equipo;
 import modelos.Estadistica;
 import modelos.Jugador;
 
+/**
+ * @author Mario
+ * @version 1
+ */
+
 public class EstadisticaImp extends AbstractConexion implements EstadisticaDAO {
 
 	List<Estadistica> listaEstadisticas = new ArrayList<>(5);
 	Estadistica estadistica = new Estadistica();
+	Jugador jugador = new Jugador();
 
 	@Override
-	public List<Estadistica> findById(int jugador) { // Como código tomo el id del jugador
+	public List<Estadistica> findById(int codigo) {
 
 		try {
-			query = "SELECT * FROM estadisticas WHERE jugador LIKE ?";
+			query = "SELECT * FROM jugadores WHERE codigo = ?"; // INNER JOIN
 			pst = conn.prepareStatement(query);
 
-			pst.setInt(1, jugador);
+			pst.setInt(1,codigo);
 			rs = pst.executeQuery();
 
 			while (rs.next()) {
