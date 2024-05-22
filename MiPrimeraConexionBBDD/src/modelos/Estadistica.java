@@ -1,3 +1,9 @@
+
+/**
+ * @author Mario
+ * @version 1
+ */
+
 package modelos;
 
 public class Estadistica{

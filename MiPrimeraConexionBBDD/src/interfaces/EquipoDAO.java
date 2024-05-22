@@ -1,8 +1,12 @@
 package interfaces;
 
 import java.util.List;
-
 import modelos.Equipo;
+
+/**
+ * @author Mario
+ * @version 1
+ */
 
 public interface EquipoDAO {
 

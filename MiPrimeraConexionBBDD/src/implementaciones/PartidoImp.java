@@ -1,11 +1,15 @@
 package implementaciones;
 
 import java.sql.SQLException;
-
 import Conexiones.AbstractConexion;
 import interfaces.PartidoDAO;
 import modelos.Equipo;
 import modelos.Partido;
+
+/**
+ * @author Mario
+ * @version 1
+ */
 
 public class PartidoImp extends AbstractConexion implements PartidoDAO {
 
@@ -13,14 +17,21 @@ public class PartidoImp extends AbstractConexion implements PartidoDAO {
 	public void visualizarDatos(Partido partido) {
 
 		try {
-			query = "SELECT * FROM partidos";
+			query = "SELECT * FROM partidos WHERE codigo = ?";
 			pst = conn.prepareStatement(query);
 
+			pst.setInt(1, partido.getCodigo());
 			rs = pst.executeQuery();
 
 			while (rs.next()) {
 
-				System.out.println();
+				System.out.println("\nPartido: \n");
+				System.out.println(" Código: " + rs.getString(1));
+				System.out.println(" Equipo_local: " + rs.getString(2));
+				System.out.println(" Equipo_visitante: " + rs.getString(3));
+				System.out.println(" Puntos_local: " + rs.getString(4));
+				System.out.println(" Puntos_visitante: " + rs.getString(5));
+				System.out.println(" Temporada: " + rs.getString(6));
 			}
 
 			pst.close();

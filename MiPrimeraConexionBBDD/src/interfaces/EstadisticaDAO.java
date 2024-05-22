@@ -1,9 +1,13 @@
 package interfaces;
 
 import java.util.List;
-
 import modelos.Estadistica;
 import modelos.Jugador;
+
+/**
+ * @author Mario
+ * @version 1
+ */
 
 public interface EstadisticaDAO {
 

@@ -1,6 +1,12 @@
 package implementaciones;
 
 import java.sql.Connection;
+
+/**
+ * @author Mario
+ * @version 1
+ */
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -82,19 +88,16 @@ public class EquipoImp extends AbstractConexion implements EquipoDAO{
 
 	@Override
 	public int eliminarEquipo(String nombre) {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
 	public boolean crearEquipo(Equipo equipo) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean cambioDivision(Equipo equipo) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 

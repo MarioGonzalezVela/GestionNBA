@@ -4,6 +4,11 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+/**
+ * @author Mario
+ * @version 1
+ */
+
 public class Conexion {
 	private String url, user, pass;
 	private static Connection conn = null;

@@ -3,6 +3,11 @@ package interfaces;
 import modelos.Equipo;
 import modelos.Partido;
 
+/**
+ * @author Mario
+ * @version 1
+ */
+
 public interface PartidoDAO {
 
 	 void visualizarDatos(Partido partido);
